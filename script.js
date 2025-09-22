@@ -16,7 +16,7 @@ else if(key.value in localStorage){
 }
 else{
     localStorage.setItem(car.keyval,JSON.stringify(car))
-
+ alert("details added successfully")
     key.value="";
     brand.value="";
     price.value=""
@@ -43,6 +43,7 @@ function remove(){
     const key=delkey.value
     if(key in localStorage){
         localStorage.removeItem(key);
+        alert("key deleted successfully")
     }
     else{
         alert("please enter a valid key")
@@ -51,4 +52,5 @@ function remove(){
 
 function clearrec(){
     localStorage.clear();
+    alert("All data has been deleted");
 }
