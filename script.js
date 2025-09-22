@@ -16,7 +16,7 @@ else if(key.value in localStorage){
 }
 else{
     localStorage.setItem(car.keyval,JSON.stringify(car))
- alert("details added successfully")
+     alert("details added successfully")
     key.value="";
     brand.value="";
     price.value=""
